@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter Options</title>
+  </head>
+  <body>
+    <h1>Currency Converter Options</h1>
+    <label for="exchangeRate">Exchange Rate (CAD to HKD):</label>
+    <input type="number" id="exchangeRate" step="any" value="6.79" />
+    <br />
+    <label for="currencyType">Currency Type:</label>
+    <select id="currencyType">
+      <option value="HKD">Hong Kong Dollar (HKD)</option>
+      <option value="EUR">Euro (EUR)</option>
+      <!-- Add more currency options as needed -->
+    </select>
+    <br />
+    <button id="saveButton">Save</button>
+
+    <script src="options.js"></script>
+  </body>
+</html>

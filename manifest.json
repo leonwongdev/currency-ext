@@ -1,0 +1,33 @@
+{
+    "name": "Currency Convertor",
+    "version": "1.0.0",
+    "description": "Currency Convertor for auto detect price tag and convert to your local currency",
+    "permissions": [],
+    "manifest_version": 3,
+    "author": "Leon",
+    "icons": {
+        "16": "icons/icon16.png",
+        "32": "icons/icon32.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "Currency Convertor"
+    },
+    "options_page": "options.html",
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "css": [
+                "content.css"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
