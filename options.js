@@ -13,6 +13,12 @@ document.addEventListener("DOMContentLoaded", function () {
   saveButton.addEventListener("click", function () {
     const exchangeRate = parseFloat(exchangeRateInput.value);
     const currencyType = currencyTypeSelect.value;
-    chrome.storage.sync.set({ exchangeRate, currencyType });
+    try {
+      chrome.storage.sync.set({ exchangeRate, currencyType });
+    } catch (error) {
+      alert("Failed to save options");
+    }
+    // alert
+    alert("Options saved");
   });
 });

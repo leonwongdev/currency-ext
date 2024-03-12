@@ -2,7 +2,10 @@
     "name": "Currency Convertor",
     "version": "1.0.0",
     "description": "Currency Convertor for auto detect price tag and convert to your local currency",
-    "permissions": [],
+    "permissions": [
+        "storage",
+        "activeTab"
+    ],
     "manifest_version": 3,
     "author": "Leon",
     "icons": {
